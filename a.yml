@@ -8,7 +8,7 @@ phases:
       - pip install -r requirements.txt
   build:
     commands:
-      - echo Buildstarted on 10sep
-  post-build:
+      - echo Build started on "10sep"
+  post_build:
     commands:
       - eb deploy Myapp-env
