@@ -1,0 +1,14 @@
+version: 02
+
+phases:
+  install:
+    runtime-versions:
+      python:3.7
+    commands:
+      - pip install -r requirements.txt
+  build:
+    commands:
+      - echo Buildstarted on 10sep
+  post-build:
+    commands:
+      - eb deploy Myapp-env
